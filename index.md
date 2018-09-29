@@ -9,7 +9,7 @@ Two players play Prisoner's Dilemma more than once in succession and they can re
 * If both players confess (Defect), they both will be sentence to 4 years respectively. Other words, both of them can earn utility for 1 respectively
 * If one player confess (Defect) but the other remain silence (Cooperate), the player who confess will be free whereas the other will be punished for 5 years. Other words, the player who defect may earns 5 utility while the player who cooperate  gets nothing
 * If both players remain silent (Cooperate), they both will be sentence to 2 years respectively. Other words, both of them can earn utility for 3 respectively
-![Fig1](https://github.com/lijiyao919/IPD-RL/blob/master/picture/Prisoner%20Dilemma_1.png)
+![Fig1](https://github.com/lijiyao919/IPD-RL/blob/master/picture/prison.png)
 
 # Method
 Reinforcement Learning is learning how to map situations to actions so as to maximize the reward signal from the environment. As Figure shown below, agent perceives Reward and State value and constructs its own internal state by reshaping the external state from environment. Then the internal state and the reward value are used to update the value of Q table by three different types of method: Dynamic Programming(DP), Temporal Difference(TD) and Monte Carlo(MC) respectively.  In the Action Selection, there is an exploration and exploitation problem. Boltzmann Distribution is used as a soft-max function to calculate the probability that determine whether agent should choose action of max𝑄 or a random action
