@@ -24,16 +24,16 @@ Reinforcement Learning is learning how to map situations to actions so as to max
 In all of the experiments below, TDBot, DPBot and MCBot represents RL Agents implemented by TD, DP and MC separately. The discount rate of all RL agents is set as 0.9. The temperature function of Boltzmann Distribution is t=20·〖0.999〗^𝑛 where n is the number of iterated games. The learning rate of the TDBot is decreasing as the iteration number goes up.
 
 First of all, 3 tournaments that use Robin-Round style are held to test each RL Agent playing with 6 other Fixed Strategy Players. In the tournament, each of the two players play 10000 rounds in one match  and the Robin-Round repeats 30 times. Figures below show each player’s mean score and its distribution in every tournament separately. 
-![fsp-td](https://raw.githubusercontent.com/lijiyao919/Figure/master/TDBot.png)
-![fsp-dp](https://raw.githubusercontent.com/lijiyao919/Figure/master/DPBot.png)
-![fsp-mc](https://raw.githubusercontent.com/lijiyao919/Figure/master/MCBot.png)
+![fsp-td](https://github.com/lijiyao919/IPD-RL/blob/master/picture/TDBot.png)
+![fsp-dp](https://github.com/lijiyao919/IPD-RL/blob/master/picture/DPBot.png)
+![fsp-mc](https://github.com/lijiyao919/IPD-RL/blob/master/picture/MCBot.png)
 
 Secondly, the homogeneous RL Agents matches are held. Here homogeneous means the agent plays with itself, so matches are TD vs. TD, DP vs. DP and MC vs. MC. Every two of the agent play 10000 times in each match. The bar chart below shows how many times can converge  to cooperation in 100 matches. The line graph shows the cooperation rate per iteration in a match that converge to cooperation. 
-![homo](https://raw.githubusercontent.com/lijiyao919/Figure/master/homo.png)
+![homo](https://github.com/lijiyao919/IPD-RL/blob/master/picture/homo.png)
 
 
 At last, heterogenous RL Agents matches are held. Heterogeneous here means agents implement their RL with different methods. So matches are TD vs. DP, TD vs. MC and DP vs. MC. The line graph below shows the cooperation rate per iteration in all matches. Also, tournament (10000 iterations for one match, the robin-round repeat 30 times)is also held between heterogenous RL agents. The payoff graph is shown as a heap graph.
-![heter](https://raw.githubusercontent.com/lijiyao919/Figure/master/heter.png)
+![heter](https://github.com/lijiyao919/IPD-RL/blob/master/picture/heter.png)
 
 # Conclusion
 * All three types of RL agents learned to play optimally against the Fixed Strategy Agents. Playing against Fixed Strategy Agents is analogous to learning in a single agent environment, because Fixed Strategy Agents does not learn.
