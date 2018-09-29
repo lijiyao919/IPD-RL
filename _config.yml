@@ -1,0 +1,8 @@
+title: A Study of Reinforcement Learning in the Iterated Prisoner's Dilemma
+description: Defect or Cooperation...This is a question!!!
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
